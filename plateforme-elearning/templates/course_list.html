@@ -1,0 +1,8 @@
+<h2>Liste des cours</h2>
+<ul>
+    {% for course in courses %}
+        <li>{{ course.title }}</li>
+    {% empty %}
+        <li>Aucun cours disponible</li>
+    {% endfor %}
+</ul>
